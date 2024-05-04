@@ -11,7 +11,7 @@ title:            OhMyGo
 tagline:          'OhMyGo notes'
 description:      'Notes from a programmer learning Go'
 url:              https://ohmygo.pl
-baseurl:          https://ohmygo.pl
+baseurl:          https://ohmygo.pl/
 
 author:
   name:           'Gopheros'
