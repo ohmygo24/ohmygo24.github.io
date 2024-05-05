@@ -24,7 +24,7 @@ func main() {
 To run the program, run the following command:
 
 {% highlight shell %}
-go run hello-worl.go
+go run hello-world.go
 {% endhighlight %}
 
 You should get the following output:
@@ -32,3 +32,5 @@ You should get the following output:
 {% highlight shell %}
 Hello, World!
 {% endhighlight %}
+
+### The main method in Go
