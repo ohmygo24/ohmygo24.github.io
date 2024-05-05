@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World and the main method
+title: Hello World and the `main` method
 ---
 
 The phenomenon of "Hello, World!" as the first program in many programming books and tutorials has a deep-rooted meaning. It is the traditional way to introduce beginners to the syntax and structure of a new programming language. Writing out "Hello, World!" is usually the simplest program that can be written in a language, so it serves as a gentle introduction.
@@ -33,4 +33,4 @@ You should get the following output:
 Hello, World!
 {% endhighlight %}
 
-### The main method in Go
+### The `main` method in Go
