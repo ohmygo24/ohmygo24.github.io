@@ -17,6 +17,8 @@ author:
   name:           'Gopheros'
   url:            https://ohmygo.pl
 
+excerpt_separator: <!--more-->
+
 gems:                [jekyll-paginate]
 paginate:            5
 paginate_path:       "page:num"
