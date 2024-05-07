@@ -59,9 +59,11 @@ If you already know a programming language, you will notice that the `main` func
 * does not return a value
 
 <div class="message">
-  Is there a difference between arguments and parameters of a method?
-* The __parameters__ of a method are the names of the variables in its declaration/definition
-* The __arguments__ of a method are the names of the variables passed to it when it is called
+  Is there a difference between arguments and parameters of a method?<br>
+  <ul>
+    <li>The <strong>parameters</strong> of a method are the names of the variables in its declaration/definition</li>
+    <li>The <strong>arguments</strong> of a method are the names of the variables passed to it when it is called</li>
+</ul>
 </div>
 
 Let's see how this is the case with the `main` function in C and Java, to then learn how to pass call arguments to the `main` function and how to code the program output.
