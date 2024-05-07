@@ -46,26 +46,38 @@ Although the above program is very simple, we can learn a little about the synta
 * `"fmt"` is a standard Go package that includes functions for formatting and printing text
 * functions such as `fmt.Println` come specifically from this package
 3. `func main()`
-* `func` is a keyword used to define functions.
-* `main` is the name of a special function in Go that is automatically run when the program starts. It is the main entry point to the program, just like `main` in other languages such as C or Java.
+* `func` is a keyword used to define functions
+* `main` is the name of a special function in Go that is automatically run when the program starts. It is the main entry point to the program, just like `main` in other languages such as C or Java
 * empty parenthesis `()` means that the `main` function does not take any arguments
 * no returned type(s) after the parenthesis means that the `main` function does not return any value
 4. `fmt.Println("Hello, World!")`
 * `fmt.Println` is a function from the `fmt` package that prints the specified string to the standard output (console in this case) and adds a newline character at the end of the
 * `"Hello, World!"` is the string of characters (string) that will be printed out
 
-#### The _main_ function in C
+If you already know a programming language, you will notice that the `main` function in Go:
+* does not take arguments
+* does not return a value
+
+<div class="message">
+  Is there a difference between arguments and parameters of a method?
+* The __parameters__ of a method are the names of the variables in its declaration/definition
+* The __arguments__ of a method are the names of the variables passed to it when it is called
+</div>
+
+Let's see how this is the case with the `main` function in C and Java, to then learn how to pass call arguments to the `main` function and how to code the program output.
+
+### The _main_ function in C
 
 {% highlight C %}
 #include <stdio.h>
 
-int main() {
+int main(int argc, char *argv[]) {
     printf("Hello, World!\n");
     return 0;
 }
 {% endhighlight %}
 
-#### The _main_ function in Java
+### The _main_ function in Java
 
 {% highlight Java %}
 public class HelloWorld {
