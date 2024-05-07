@@ -38,21 +38,21 @@ Hello, World!
 Although the above program is very simple, we can learn a little about the syntax of the language and especially about the `main` function, which is used to run programs in Go.
 
 1. `package main`
-* in Go, all source files must start with a `package` directive, which defines which package the file belongs to
-* `main` is a special package that tells the compiler that this code contains the entry point of the program, i.e. the `main` function
-* in the `main` package, the compiler expects a function with the same name (`main`), which makes it possible to run the entire program
+    * in Go, all source files must start with a `package` directive, which defines which package the file belongs to
+    * `main` is a special package that tells the compiler that this code contains the entry point of the program, i.e. the `main` function
+    * in the `main` package, the compiler expects a function with the same name (`main`), which makes it possible to run the entire program
 2. `import "fmt"`
-* `import` is an instruction that incorporates other packages into the program, allowing you to use their functions and types
-* `"fmt"` is a standard Go package that includes functions for formatting and printing text
-* functions such as `fmt.Println` come specifically from this package
+    * `import` is an instruction that incorporates other packages into the program, allowing you to use their functions and types
+    * `"fmt"` is a standard Go package that includes functions for formatting and printing text
+    * functions such as `fmt.Println` come specifically from this package
 3. `func main()`
-* `func` is a keyword used to define functions
-* `main` is the name of a special function in Go that is automatically run when the program starts. It is the main entry point to the program, just like `main` in other languages such as C or Java
-* empty parenthesis `()` means that the `main` function does not take any arguments
-* no returned type(s) after the parenthesis means that the `main` function does not return any value
+    * `func` is a keyword used to define functions
+    * `main` is the name of a special function in Go that is automatically run when the program starts. It is the main entry point to the program, just like `main` in other languages such as C or Java
+    * empty parenthesis `()` means that the `main` function does not take any arguments
+    * no returned type(s) after the parenthesis means that the `main` function does not return any value
 4. `fmt.Println("Hello, World!")`
-* `fmt.Println` is a function from the `fmt` package that prints the specified string to the standard output (console in this case) and adds a newline character at the end of the
-* `"Hello, World!"` is the string of characters (string) that will be printed out
+    * `fmt.Println` is a function from the `fmt` package that prints the specified string to the standard output (console in this case) and adds a newline character at the end of the
+    * `"Hello, World!"` is the string of characters (string) that will be printed out
 
 If you already know a programming language, you will notice that the `main` function in Go:
 * does not take arguments
