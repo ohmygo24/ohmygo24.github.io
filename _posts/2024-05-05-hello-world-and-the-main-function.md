@@ -111,7 +111,7 @@ func main() {
     fmt.Println("Hello, World!")
     os.Exit(0) // Exit with a status code 0
 }
-{% highlight %}
+{% endhighlight %}
 
 ### Accessing Command-Line Arguments
 
@@ -134,6 +134,6 @@ func main() {
         fmt.Println("No command-line arguments provided.")
     }
 }
-{% highlight %}
+{% endhighlight %}
 
 In this example, `os.Args` is a slice of strings where the first element is the program name, and the subsequent elements are the command-line arguments.
