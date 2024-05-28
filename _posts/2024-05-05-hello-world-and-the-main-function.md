@@ -11,7 +11,7 @@ The history of _Hello World_ dates back to the 1970s, when [Brian Kernighan](htt
 
 An example of a working _Hello World_ program in Go.
 
-{% highlight go %}
+```go
 package main
 
 import "fmt"
@@ -19,19 +19,19 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
-{% endhighlight %}
+```
 
 To run the program, run the following command:
 
-{% highlight shell %}
+```shell
 go run hello-world.go
-{% endhighlight %}
+```
 
 You should get the following output:
 
-{% highlight shell %}
+```shell
 Hello, World!
-{% endhighlight %}
+```
 
 ### The _main_ function in Go
 
@@ -70,25 +70,25 @@ Let's see how this is the case with the `main` function in C and Java, to then l
 
 ### The _main_ function in C
 
-{% highlight C %}
+```c
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
     printf("Hello, World!\n");
     return 0;
 }
-{% endhighlight %}
+```
 
 ### The _main_ function in Java
 
-{% highlight Java %}
+```java
 public class HelloWorld {
     
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
 }
-{% endhighlight %}
+```
 
 ### Differences and Similarities
 
@@ -99,7 +99,7 @@ public class HelloWorld {
 ### Returning Exit Codes
 
 In Go, you can return an exit code to the operating system using the `os` package:
-{% highlight go %}
+```go
 package main
 
 import (
@@ -111,12 +111,12 @@ func main() {
     fmt.Println("Hello, World!")
     os.Exit(0) // Exit with a status code 0
 }
-{% endhighlight %}
+```
 
 ### Accessing Command-Line Arguments
 
 To access command-line arguments in Go, you can use `os.Args`:
-{% highlight go %}
+```go
 package main
 
 import (
@@ -134,6 +134,6 @@ func main() {
         fmt.Println("No command-line arguments provided.")
     }
 }
-{% endhighlight %}
+```
 
 In this example, `os.Args` is a slice of strings where the first element is the program name, and the subsequent elements are the command-line arguments.
