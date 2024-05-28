@@ -89,3 +89,51 @@ public class HelloWorld {
     }
 }
 {% endhighlight %}
+
+### Differences and Similarities
+
+* **Return Type**: In Go, the `main` function does not return any value, whereas in C, it typically returns an `int`. In Java, the main method is `void`.
+* **Arguments**: In Java, main accepts a `String[]` as arguments for command-line inputs. In C, main can accept `int argc` and `char *argv[]`. In Go, main does not take any arguments by default, but command-line arguments can be accessed through the os package.
+* **Entry Point**: All three languages use `main` as the entry point of the program, but the syntax and conventions differ.
+
+### Returning Exit Codes
+
+In Go, you can return an exit code to the operating system using the `os` package:
+{% highlight go %}
+package main
+
+import (
+    "fmt"
+    "os"
+)
+
+func main() {
+    fmt.Println("Hello, World!")
+    os.Exit(0) // Exit with a status code 0
+}
+{% highlight %}
+
+### Accessing Command-Line Arguments
+
+To access command-line arguments in Go, you can use `os.Args`:
+{% highlight go %}
+package main
+
+import (
+    "fmt"
+    "os"
+)
+
+func main() {
+    if len(os.Args) > 1 {
+        fmt.Println("Command-line arguments:")
+        for _, arg := range os.Args[1:] {
+            fmt.Println(arg)
+        }
+    } else {
+        fmt.Println("No command-line arguments provided.")
+    }
+}
+{% highlight %}
+
+In this example, `os.Args` is a slice of strings where the first element is the program name, and the subsequent elements are the command-line arguments.
